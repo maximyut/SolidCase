@@ -63,6 +63,11 @@
 			sizes="1024x1024"
 			href="img/favicons/apple-touch-icon-1024x1024.png"
 		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="styles/main.css" />
 	</head>
 	<body>
@@ -292,7 +297,7 @@
 				Эффективные юридические решения <br />
 				для развития бизнеса и снижения затрат
 			</h2>
-			<div class="btn promo__btn">Получить консультацию</div>
+			<button class="btn promo__btn">Получить консультацию</button>
 		</div>
 		<div class="promo__swiper">
 			<div class="promo__swiper-text">
@@ -300,7 +305,7 @@
 				бизнес проектов
 			</div>
 			<div class="promo__swiper-btns">
-				<div class="btn promo__swiper-btn promo__swiper-btn--left">
+				<button class="btn promo__swiper-btn promo__swiper-btn--left">
 					<svg
 						width="34"
 						height="16"
@@ -329,8 +334,8 @@
 							/>
 						</g>
 					</svg>
-				</div>
-				<div class="btn promo__swiper-btn promo__swiper-btn--left">
+				</button>
+				<button class="btn promo__swiper-btn promo__swiper-btn--left">
 					<svg
 						width="34"
 						height="16"
@@ -359,7 +364,7 @@
 							/>
 						</g>
 					</svg>
-				</div>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -368,17 +373,17 @@
 	</div>
 </section>
 
-	<section id="practices" class="tabs-block">
-	<div class="container tabs-block__container">
-		<div class="tabs-block__header">
-			<h2 class="tabs-block__title">Практики и решения</h2>
-			<div class="tabs-block__tabs">
-				<div class="tabs-block__tab tabs-block__tab--active">Практики</div>
-				<div class="tabs-block__tab">Отрасли</div>
+	<section id="practices" class="block-tabs practices">
+	<div class="container block-tabs__container">
+		<div class="block-tabs__header">
+			<h2 class="block-tabs__title">Практики и решения</h2>
+			<div class="block-tabs__tabs">
+				<div class="block-tabs__tab block-tabs__tab--active">Практики</div>
+				<div class="block-tabs__tab">Отрасли</div>
 			</div>
 		</div>
-		<div class="tabs-block__content">
-			<div class="tabs-block__tab-content tabs-block__tab-content--active">
+		<div class="block-tabs__content">
+			<div class="block-tabs__tab-content block-tabs__tab-content--active">
 				<ul class="categories-list categories-list--practice">
 					<li class="categories-list__item categories-list__item--tree">
 						<a href="" class="categories-list__link"> Юридическое сопровождение </a>
@@ -552,7 +557,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="tabs-block__tab-content">
+			<div class="block-tabs__tab-content">
 				<ul class="categories-list categories-list--practice">
 					<li class="categories-list__item categories-list__item--tree">
 						<a href="" class="categories-list__link">Арбитражные споры</a>
@@ -571,13 +576,13 @@
 			</div>
 		</div>
 
-		<div class="tabs-block__footer">
-			<div class="tabs-block__footer-text">
+		<div class="block-tabs__footer">
+			<div class="block-tabs__footer-text">
 				Команда Solid Case предлагает эффективные решения по любым юридическим вопросам, при
 				этом хорошо понимая коммерческие и правовые аспекты ведения бизнеса в различных
 				отраслях.
 			</div>
-			<div class="tabs-block__footer-btn btn">Заказть экспертизу</div>
+			<button class="block-tabs__footer-btn btn">Заказть экспертизу</button>
 		</div>
 	</div>
 </section>
@@ -607,7 +612,377 @@
 	</div>
 </section>
 
-	
+	<section id="projects" class="projects block-tabs">
+	<div class="container block-tabs__container">
+		<div class="block-tabs__header">
+			<h2 class="block-tabs__title">Наши проекты</h2>
+			<div class="block-tabs__tabs">
+				<div class="block-tabs__tab block-tabs__tab--active">Новые кейсы</div>
+				<div class="block-tabs__tab">Все проекты</div>
+			</div>
+		</div>
+		<div class="block-tabs__content">
+			<div class="block-tabs__tab-content block-tabs__tab-content--active">
+				<div class="projects__grid">
+					<div class="projects__grid-header projects__grid-row">
+						<h3 class="projects__grid-title">Проект</h3>
+						<h3 class="projects__grid-title">Основные задачи клиента</h3>
+						<h3 class="projects__grid-title">Выгоды для клиента</h3>
+					</div>
+					<div class="projects__grid-project projects__grid-row">
+						<div class="projects__grid-project-name">
+							<h4>
+								Взыскание задолженностипо договору на разработку программного
+								обеспечения
+							</h4>
+							<a href="#" class="projects__grid-hashtag hashtag">Арбитражные споры</a>
+						</div>
+						<div class="projects__grid-project-text">
+							<ul>
+								<li>Взыскать дебиторскую задолженностьс заказчика</li>
+								<li>Взыскать все судебные расходы</li>
+								<li>Защитить деловую репутацию</li>
+							</ul>
+						</div>
+						<div class="projects__grid-project-text">
+							<ul>
+								<li>
+									По решению суда в пользу клиента была взыскана в полном объеме
+									задолженностьна сумму более 1,2 млн рублей
+								</li>
+								<li>
+									Суд компенсировал клиенту 100% расходовна юристов на сумму более
+									100 000 рубле.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-tabs__tab-content"></div>
+		</div>
+	</div>
+</section>
+
+	<section class="block-about" id="block-about">
+	<div class="container block-about__container">
+		<div class="block-about__inner">
+			<div class="block-about__content">
+				<h2 class="block-about__title">О компании</h2>
+				<div class="block-about__text">
+					Юридическая фирма Solid Case создана, чтобы воплощать в жизнь бизнес идеи и
+					проекты безопасно и без юридических рисков в будущем. Разрабатывая
+					индивидуальную правовую стратегию, мы помогаем Вашему бизнесу двигаться вперед.
+					Опыт Solid по сопровождению бизнеса обеспечивает клиентам конкурентные
+					преимущества и уверенное развитие на рынке. Наша задача - расширить горизонты,
+					снять шаблоны, опередить время, погрузиться в мир Вашего бизнеса, достичь
+					максимального результата вместе с Вами. С заботой о Вашей репутации, Юлия
+					ТкачеваУправляющий партнер Solid Case The Dickson Poon School of Law,King’s
+					College London
+				</div>
+				<button class="btn block-about__btn">Скачать презентацию</button>
+			</div>
+			<div class="blokc-about__img-wrapper">
+				<img src="img/about/about.webp" alt="women" class="block-about__img" />
+			</div>
+		</div>
+
+		<div class="block-about__footer">
+			<div class="block-about__footer-item">
+				<div class="block-about__footer-item-number">10</div>
+				<div class="block-about__footer-item-text">
+					лет опыта в области сопровождения бизнеса
+				</div>
+			</div>
+			<div class="block-about__footer-item">
+				<div class="block-about__footer-item-number">8</div>
+				<div class="block-about__footer-item-text">ключевых направлений</div>
+			</div>
+			<div class="block-about__footer-item">
+				<div class="block-about__footer-item-number">1300</div>
+				<div class="block-about__footer-item-text">успешно реализованных проектов</div>
+			</div>
+			<div class="block-about__footer-item">
+				<div class="block-about__footer-item-number">$1,5 <span>млрд</span></div>
+				<div class="block-about__footer-item-text">общая сумма урегулированных споров</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="testimonials">
+	<div class="container testimonials__container">
+		<h2 class="title testimonials__title title--vert">Отзывы и благодарности</h2>
+
+		<div class="testimonials__wrapper swiper">
+			<div class="testimonials__inner swiper-wrapper">
+				<div class="testimonials__testimonial testimonials__testimonial--left swiper-slide">
+					<div class="testimonials__testimonial-text">
+						Мы с коллегами выражаем огромную благодарность юристам компании Solid Case
+						за содействие и оказанную помощь в урегулировании предъявленного к нам иска.
+						Юристы Solid Case - это команда профессионалов, с которыми приятно
+						сотрудничать и которых смело можно рекомендовать для защиты ваших прав и
+						законных интересов в судах! Открыть в pdf
+					</div>
+					<div class="testimonials__testimonial-author">Руководство ООО «Променад»</div>
+				</div>
+				<div class="testimonials__testimonial testimonials__testimonial--right swiper-slide">
+					<div class="testimonials__testimonial-text">
+						Опыт и квалификация юристов компании Solid Case помогают нашей компании в
+						принятии бизнес решений, запуске новых проектов, а также разрешению сложных
+						споров с контрагентами... Особо хотелось бы отметить нацеленность команды
+						Solid case на результат и высокую бизнес-ориентированность, а также
+						комфортную деловую коммуникацию. Открыть в pdf
+					</div>
+					<div class="testimonials__testimonial-author">
+						Руководство ООО «Новая рудная компания»
+					</div>
+				</div>
+				<div class="testimonials__testimonial swiper-slide">
+					<div class="testimonials__testimonial-text">
+						Опыт и квалификация юристов компании Solid Case помогают нашей компании в
+						принятии бизнес решений, запуске новых проектов, а также разрешению сложных
+						споров с контрагентами... Особо хотелось бы отметить нацеленность команды
+						Solid case на результат и высокую бизнес-ориентированность, а также
+						комфортную деловую коммуникацию. Открыть в pdf
+					</div>
+					<div class="testimonials__testimonial-author">
+						Руководство ООО «Новая рудная компания»
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonials__btns">
+				<button class="testimonials__btn testimonials__btn--prev ">
+					<svg
+						width="34"
+						height="16"
+						viewBox="0 0 34 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<mask
+							id="mask0_223_1167"
+							style="mask-type: luminance"
+							maskUnits="userSpaceOnUse"
+							x="0"
+							y="0"
+							width="34"
+							height="16"
+						>
+							<path
+								d="M33.7793 0.674805H0.197433V15.49H33.7793V0.674805Z"
+								fill="white"
+							/>
+						</mask>
+						<g mask="url(#mask0_223_1167)">
+							<path
+								d="M7.64581 15.49L0.235115 8.07304L7.64581 0.674805L8.53397 1.56297L2.62225 7.44977H33.7422V8.69631H2.62225L8.53397 14.6018L7.64581 15.49Z"
+								fill="#0A4378"
+							/>
+						</g>
+					</svg>
+				</button>
+				<button class="testimonials__btn testimonials__btn--next ">
+					<svg
+						width="34"
+						height="16"
+						viewBox="0 0 34 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<mask
+							id="mask0_223_1178"
+							style="mask-type: luminance"
+							maskUnits="userSpaceOnUse"
+							x="0"
+							y="0"
+							width="34"
+							height="16"
+						>
+							<path
+								d="M0.220703 0.674805H33.8026V15.49H0.220703V0.674805Z"
+								fill="white"
+							/>
+						</mask>
+						<g mask="url(#mask0_223_1178)">
+							<path
+								d="M26.3542 15.49L33.7649 8.07304L26.3542 0.674805L25.466 1.56297L31.3778 7.44977H0.257812V8.69631H31.3778L25.466 14.6018L26.3542 15.49Z"
+								fill="#0A4378"
+							/>
+						</g>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<!-- 
+		<div class="testimonials__wrapper">
+			<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">Slide 01</li>
+						<li class="splide__slide">Slide 02</li>
+						<li class="splide__slide">Slide 03</li>
+					</ul>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</section>
+
+	<section id="posts" class="block-tabs block-posts">
+	<div class="container block-tabs__container">
+		<div class="block-tabs__header">
+			<h2 class="block-tabs__title">Наши публикации</h2>
+			<div class="block-tabs__tabs">
+				<div class="block-tabs__tab block-tabs__tab--active">Статьи</div>
+				<div class="block-tabs__tab">Все публикации</div>
+			</div>
+		</div>
+		<div class="block-tabs__content">
+			<div class="block-tabs__tab-content block-tabs__tab-content--active">
+				<div class="posts-swiper swiper">
+	<div class="posts-swiper__wrapper swiper-wrapper">
+		<div class="swiper-slide"><div class="post-card">
+	<img src="img/posts/card.webp" alt="post image" class="post-card__img" />
+	<div class="post-card__text">
+		<h3 class="post-card__title">
+			Как составить договор на разработку сайта и защитить интересы IT компании
+		</h3>
+		<div class="post-card__descr">
+			Нередко на практике мы сталкиваемся с судебными делами, в рамках которых разработчики
+			вынуждены взыскивать долги со своих заказчиков в судебном порядке. Во многом причиной
+			возникновения такой ситуации является слабый договор...
+			<a href="">Читать далее</a>
+		</div>
+	</div>
+</div>
+</div>
+		<div class="swiper-slide"><div class="post-card">
+	<img src="img/posts/card.webp" alt="post image" class="post-card__img" />
+	<div class="post-card__text">
+		<h3 class="post-card__title">
+			Как составить договор на разработку сайта и защитить интересы IT компании
+		</h3>
+		<div class="post-card__descr">
+			Нередко на практике мы сталкиваемся с судебными делами, в рамках которых разработчики
+			вынуждены взыскивать долги со своих заказчиков в судебном порядке. Во многом причиной
+			возникновения такой ситуации является слабый договор...
+			<a href="">Читать далее</a>
+		</div>
+	</div>
+</div>
+</div>
+		<div class="swiper-slide"><div class="post-card">
+	<img src="img/posts/card.webp" alt="post image" class="post-card__img" />
+	<div class="post-card__text">
+		<h3 class="post-card__title">
+			Как составить договор на разработку сайта и защитить интересы IT компании
+		</h3>
+		<div class="post-card__descr">
+			Нередко на практике мы сталкиваемся с судебными делами, в рамках которых разработчики
+			вынуждены взыскивать долги со своих заказчиков в судебном порядке. Во многом причиной
+			возникновения такой ситуации является слабый договор...
+			<a href="">Читать далее</a>
+		</div>
+	</div>
+</div>
+</div>
+		<div class="swiper-slide"><div class="post-card">
+	<img src="img/posts/card.webp" alt="post image" class="post-card__img" />
+	<div class="post-card__text">
+		<h3 class="post-card__title">
+			Как составить договор на разработку сайта и защитить интересы IT компании
+		</h3>
+		<div class="post-card__descr">
+			Нередко на практике мы сталкиваемся с судебными делами, в рамках которых разработчики
+			вынуждены взыскивать долги со своих заказчиков в судебном порядке. Во многом причиной
+			возникновения такой ситуации является слабый договор...
+			<a href="">Читать далее</a>
+		</div>
+	</div>
+</div>
+</div>
+	</div>
+	<div class="posts-swiper__footer">
+		<div class="posts-swiper__tags">
+			<span>Популярные рубрики:</span>
+			<a href="#" class="posts-swiper__tag hashtag">Арбитражные споры</a>
+			<a href="#" class="posts-swiper__tag hashtag">Коммерческая практика</a>
+			<a href="#" class="posts-swiper__tag hashtag">Взыскание задолженности</a>
+			<a href="#" class="posts-swiper__tag hashtag">Недвижимость и строительство</a>
+			<a href="#" class="posts-swiper__tag hashtag">Юридическое сопровождение</a>
+			<a href="#" class="posts-swiper__tag hashtag">Релокация бизнеса</a>
+		</div>
+		<div class="posts-swiper__btns">
+			<button class="btn posts-swiper__btn posts-swiper__btn--prev">
+				<svg
+					width="34"
+					height="16"
+					viewBox="0 0 34 16"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<mask
+						id="mask0_223_1117"
+						style="mask-type: luminance"
+						maskUnits="userSpaceOnUse"
+						x="0"
+						y="0"
+						width="34"
+						height="16"
+					>
+						<path d="M33.7793 0.674805H0.197433V15.49H33.7793V0.674805Z" fill="white" />
+					</mask>
+					<g mask="url(#mask0_223_1117)">
+						<path
+							d="M7.64581 15.49L0.235115 8.07304L7.64581 0.674805L8.53397 1.56297L2.62225 7.44977H33.7422V8.69631H2.62225L8.53397 14.6018L7.64581 15.49Z"
+							fill="white"
+						/>
+					</g>
+				</svg>
+			</button>
+			<button class="btn posts-swiper__btn posts-swiper__btn--next">
+				<svg
+					width="34"
+					height="16"
+					viewBox="0 0 34 16"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<mask
+						id="mask0_223_1128"
+						style="mask-type: luminance"
+						maskUnits="userSpaceOnUse"
+						x="0"
+						y="0"
+						width="34"
+						height="16"
+					>
+						<path
+							d="M0.220703 0.674805H33.8026V15.49H0.220703V0.674805Z"
+							fill="white"
+						/>
+					</mask>
+					<g mask="url(#mask0_223_1128)">
+						<path
+							d="M26.3542 15.49L33.7649 8.07304L26.3542 0.674805L25.466 1.56297L31.3778 7.44977H0.257812V8.69631H31.3778L25.466 14.6018L26.3542 15.49Z"
+							fill="white"
+						/>
+					</g>
+				</svg>
+			</button>
+		</div>
+		
+	</div>
+</div>
+
+			</div>
+			<div class="block-tabs__tab-content"></div>
+		</div>
+	</div>
+</section>
+
 
 </main>
 <footer class="footer">
@@ -621,10 +996,10 @@
 	</svg>
 </div>
 
-					<span
-						>Юридическое сопровождение <br />
-						бизнеса и ведение споров</span
-					>
+					<span>
+						Юридическое сопровождение <br />
+						бизнеса и ведение споров
+					</span>
 				</div>
 				<div class="footer__contacts">
 					<div class="footer__contact footer__contact--email">
@@ -651,12 +1026,92 @@
 			</div>
 			<div class="footer__block">
 				<div class="footer__menu footer__menu--uslugi">
-					<div class="footer__menu-title">Услуги</div>
-					<ul class="footer__list"></ul>
+					<div class="footer__block-title">Услуги</div>
+					<div class="footer__menu">
+						<ul class="categories-list ">
+							<li class="categories-list__item categories-list__item--tree">
+								<a href="" class="categories-list__link"> Юридическое сопровождение </a>
+								<ul class="categories-list__sublist categories-list__sublist--collapsed">
+									<li class="categories-list__item">
+										<a class="categories-list__link"
+											>Юридические консультации для бизнеса
+										</a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Разработка договоров </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link">Налоговое консультирование </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Корпоративное право </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Трудовое право </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Сопровождение ВЭД </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Юридический аутсорсинг </a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer__block">
+				<div class="footer__menu footer__menu--uslugi">
+					<ul class="categories-list ">
+						<li class="categories-list__item categories-list__item">
+							<a href="" class="categories-list__link"> Судебные споры и взыскание долгов</a>
+						</li>
+						<li class="categories-list__item categories-list__item">
+							<a href="" class="categories-list__link"> Арбитражные споры</a>
+						</li>
+						<li class="categories-list__item categories-list__item">
+							<a href="" class="categories-list__link"> Интеллектуальная собственность</a>
+						</li>
+						<li class="categories-list__item categories-list__item">
+							<a href="" class="categories-list__link"> Создание бизнеса в России</a>
+						</li>
+						<li class="categories-list__item categories-list__item">
+							<a href="" class="categories-list__link"> Недвижимость и строительство</a>
+						</li>
+						<li class="categories-list__item categories-list__item">
+							<a href="" class="categories-list__link"> Международные проекты </a>
+						</li>
+					</ul>	
 				</div>
 				<div class="footer__menu footer__menu--about">
-					<div class="footer__menu-title"></div>
-					<ul class="footer__list"></ul>
+					<div class="footer__menu-title">О нас</div>
+					<div class="footer__menu-inner">
+						<ul class="categories-list ">
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Проекты</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Миссия</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Комманда</a>
+							</li>
+						</ul>
+						<ul class="categories-list ">
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Карьера</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Медиа-Центр</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Карта сайта</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
