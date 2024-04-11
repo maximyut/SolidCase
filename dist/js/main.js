@@ -17,7 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
   var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".posts-swiper", {
     // Optional parameters
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
+    breakpoints: {
+      1024: {
+        slidesPerView: 3
+      },
+      600: {
+        slidesPerView: 2
+      }
+    },
     spaceBetween: 100,
     // Navigation arrows
     navigation: {
@@ -44,13 +52,25 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*****************************************************!*\
   !*** ./src/blocks/modules/block-tabs/block-tabs.js ***!
   \*****************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
 
 document.addEventListener("DOMContentLoaded", function () {
   var tabsBlocks = document.querySelectorAll(".block-tabs");
   tabsBlocks.forEach(function (tabsBlock) {
     var tabs = tabsBlock.querySelectorAll(".block-tabs__tab");
     var tabContents = tabsBlock.querySelectorAll(".block-tabs__tab-content");
+    tabs.forEach(function (tab) {
+      tab.classList.remove("block-tabs__tab--active");
+    });
+    tabContents.forEach(function (tabContent) {
+      tabContent.classList.remove("block-tabs__tab-content--active");
+    });
+    tabs[0].classList.add("block-tabs__tab--active");
+    tabContents[0].classList.add("block-tabs__tab-content--active");
     tabs.forEach(function (tab, i) {
       tab.addEventListener("click", function (event) {
         event.preventDefault();
@@ -64,6 +84,38 @@ document.addEventListener("DOMContentLoaded", function () {
         tabContents[i].classList.add("block-tabs__tab-content--active");
       });
     });
+    if (window.innerWidth <= 1024) {
+      tabContents.forEach(function (tabContent, i) {
+        tabContent.classList.add("swiper-".concat(i));
+        var swiperBlock = document.createElement("div");
+        var cols = tabContent.querySelectorAll(".block-tabs__col");
+        swiperBlock.className = "swiper-wrapper";
+        tabContent.insertBefore(swiperBlock, tabContent.querySelector(".block-tabs__btns"));
+        cols.forEach(function (col) {
+          col.classList.add("swiper-slide");
+          swiperBlock.append(col);
+        });
+        var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".practices .swiper-".concat(i), {
+          slidesPerView: 1,
+          breakpoints: {
+            600: {
+              slidesPerView: 2
+            }
+          },
+          freeMode: true
+        });
+        tabContent.querySelectorAll(".block-tabs__btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            if (btn.classList.contains("block-tabs__btn--next")) {
+              swiper.slideNext();
+            }
+            if (btn.classList.contains("block-tabs__btn--prev")) {
+              swiper.slidePrev();
+            }
+          });
+        });
+      });
+    }
   });
 });
 
@@ -110,6 +162,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/projects/projects.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/modules/projects/projects.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
+
+document.addEventListener("DOMContentLoaded", function () {
+  var projects = document.querySelectorAll(".projects__grid-project");
+  if (window.innerWidth <= 768) {
+    projects.forEach(function (project) {
+      console.log(project);
+      project.classList.add("projects__grid-project--mobile");
+    });
+    var tabsContent = document.querySelectorAll(".projects .block-tabs__tab-content");
+    tabsContent.forEach(function (tabContent, i) {
+      tabContent.classList.add("swiper-".concat(i));
+      tabContent.querySelector(".projects__grid").classList.add("swiper-wrapper");
+      tabContent.querySelectorAll(".projects__grid-project").forEach(function (project) {
+        project.classList.add("swiper-slide");
+      });
+      var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".projects .swiper-".concat(i), {});
+      tabContent.querySelectorAll(".projects__btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (btn.classList.contains("projects__btn--next")) {
+            swiper.slideNext();
+          }
+          if (btn.classList.contains("projects__btn--prev")) {
+            swiper.slidePrev();
+          }
+        });
+      });
+    });
+  }
+});
+
+/***/ }),
+
 /***/ "./src/blocks/modules/testimonials/testimonials.js":
 /*!*********************************************************!*\
   !*** ./src/blocks/modules/testimonials/testimonials.js ***!
@@ -126,7 +219,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".testimonials__wrapper", {
     // Optional parameters
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 1,
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      }
+    },
     history: {
       enabled: true,
       key: "slide",
@@ -152,7 +250,6 @@ document.addEventListener("DOMContentLoaded", function () {
         swiper.slides.forEach(function (slide) {
           slide.classList.remove("testimonials__testimonial--left", "testimonials__testimonial--right");
         });
-        console.log(swiper);
         swiper.el.querySelector("[data-swiper-slide-index=\"".concat(leftIndex, "\"]")).classList.add("testimonials__testimonial--left");
         swiper.el.querySelector("[data-swiper-slide-index=\"".concat(rightIndex, "\"]")).classList.add("testimonials__testimonial--right");
       };
@@ -193,10 +290,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_block_tabs_block_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/block-tabs/block-tabs */ "./src/blocks/modules/block-tabs/block-tabs.js");
-/* harmony import */ var _modules_block_tabs_block_tabs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_block_tabs_block_tabs__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_testimonials_testimonials__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/testimonials/testimonials */ "./src/blocks/modules/testimonials/testimonials.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_projects_projects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/projects/projects */ "./src/blocks/modules/projects/projects.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 

@@ -96,6 +96,15 @@
 						<div class="header__phone">
 							<a href="tel:+7 495 155 78 75">+7 495 155 78 75</a>
 						</div>
+						<button class="btn header__btn header__btn--mobile">
+							<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.9999 14.9731H0.111694V15.9999H17.9999V14.9731Z" fill="white" />
+								<path d="M17.9999 0H0.111694V1.02675H17.9999V0Z" fill="white" />
+								<path d="M18.0001 5.02661H9.72681V6.05336H18.0001V5.02661Z" fill="white" />
+								<path d="M18.0001 9.94653H9.72681V10.9733H18.0001V9.94653Z" fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.43975 3.93579L0 7.9908L6.43975 12.1498V3.93579Z" fill="white" />
+							  </svg>
+						</button>
 						<button class="btn header__btn">Заказать звонок</button>
 					</div>
 					<nav class="header__menu menu">
@@ -288,7 +297,7 @@
 	<div class="container promo__container">
 		<div class="promo__inner">
 			<h1 class="title promo__title">
-				<span class="name">SOLID CASE</span> 
+				<span class="name">SOLID CASE</span>
 				<span class="sub">
 					юридические услуги <span class="underline">для бизнеса</span>
 				</span>
@@ -369,7 +378,12 @@
 		</div>
 	</div>
 	<div class="promo__bg-wrapper">
-		<img src="./img/promo/promo_bg.png" alt="" class="promo__bg" />
+		<img
+			src="./img/promo/promo_bg.webp"
+			srcset="./img/promo/promo_bg.webp 1920w, ./img/promo/promo_bg_mob.webp 768w"
+			alt=""
+			class="promo__bg"
+		/>
 	</div>
 </section>
 
@@ -378,201 +392,329 @@
 		<div class="block-tabs__header">
 			<h2 class="block-tabs__title">Практики и решения</h2>
 			<div class="block-tabs__tabs">
-				<div class="block-tabs__tab block-tabs__tab--active">Практики</div>
+				<div class="block-tabs__tab">Практики</div>
 				<div class="block-tabs__tab">Отрасли</div>
 			</div>
 		</div>
 		<div class="block-tabs__content">
-			<div class="block-tabs__tab-content block-tabs__tab-content--active">
-				<ul class="categories-list categories-list--practice">
-					<li class="categories-list__item categories-list__item--tree">
-						<a href="" class="categories-list__link"> Юридическое сопровождение </a>
-						<ul class="categories-list__sublist categories-list__sublist--collapsed">
-							<li class="categories-list__item">
-								<a class="categories-list__link"
-									>Юридические консультации для бизнеса
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Разработка договоров </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">Налоговое консультирование </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Корпоративное право </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Трудовое право </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Сопровождение ВЭД </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Юридический аутсорсинг </a>
-							</li>
-						</ul>
-					</li>
-					<li class="categories-list__item categories-list__item--tree">
-						<a href="" class="categories-list__link"> Создание бизнеса в России </a>
-						<ul class="categories-list__sublist categories-list__sublist--collapsed">
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Разработка структуры владения бизнеса
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Налоговое планирование </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"
-									>Составление корпоративных документов
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Договоры опциона, займа </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Правовой аудит бизнеса перед покупкой
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li class="categories-list__item categories-list__item--tree">
-						<a href="" class="categories-list__link">
-							Судебные споры и взыскание долгов
-						</a>
-						<ul class="categories-list__sublist categories-list__sublist--collapsed">
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Досудебное взыскание задолженности
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Судебное взыскание долгов </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"
-									>Взыскание долга в арбитражном суде
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Консультации по взысканию задолженности
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Представительство компаний в судах общей юрисдикции
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Защита бизнеса в трудовых спорах
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Расторжение договоров в судебном порядке
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li class="categories-list__item categories-list__item--tree">
-						<a href="" class="categories-list__link"> Арбитражные споры </a>
-						<ul class="categories-list__sublist categories-list__sublist--collapsed">
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Ведение арбитражных дел </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Представительство в арбитражном суде
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">Споры по договору аренды </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Споры по договору подряда </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Споры по договору поставки </a>
-							</li>
-						</ul>
-					</li>
-					<li class="categories-list__item categories-list__item--tree">
-						<a href="" class="categories-list__link">
-							Интеллектуальная собственность
-						</a>
-						<ul class="categories-list__sublist categories-list__sublist--collapsed">
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Проверка товарных знаков </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Регистрация товарных знаков </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">Аннулирование товарных знаков </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Регистрация договоров в Роспатенте
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Регистрация ПО в Роспатент </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Регистрация ПО в реестре Минцифры
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Аккредитация IT компаний </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Сопровождение сделок с IP </a>
-							</li>
-						</ul>
-					</li>
-					<li class="categories-list__item categories-list__item--tree">
-						<a href="" class="categories-list__link"> Международные проекты </a>
-						<ul class="categories-list__sublist categories-list__sublist--collapsed">
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Создание компаний за рубежом </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Релокация бизнеса </a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"
-									>Юридическое сопровождение бизнеса за рубежом
-								</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link"> Платежное агентирование </a>
-							</li>
-						</ul>
-					</li>
-				</ul>
+			<div class="block-tabs__tab-content">
+				<div class="block-tabs__col">
+					<ul class="categories-list categories-list--practice">
+						<li class="categories-list__item categories-list__item--tree">
+							<a href="" class="categories-list__link"> Юридическое сопровождение </a>
+							<ul
+								class="categories-list__sublist categories-list__sublist--collapsed"
+							>
+								<li class="categories-list__item">
+									<a class="categories-list__link"
+										>Юридические консультации для бизнеса
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Разработка договоров </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">Налоговое консультирование </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Корпоративное право </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Трудовое право </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Сопровождение ВЭД </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Юридический аутсорсинг </a>
+								</li>
+							</ul>
+						</li>
+						<li class="categories-list__item categories-list__item--tree">
+							<a href="" class="categories-list__link"> Создание бизнеса в России </a>
+							<ul
+								class="categories-list__sublist categories-list__sublist--collapsed"
+							>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Разработка структуры владения бизнеса
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Налоговое планирование </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"
+										>Составление корпоративных документов
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Договоры опциона, займа </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Правовой аудит бизнеса перед покупкой
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="block-tabs__col">
+					<ul class="categories-list categories-list--practice">
+						<li class="categories-list__item categories-list__item--tree">
+							<a href="" class="categories-list__link">
+								Судебные споры и взыскание долгов
+							</a>
+							<ul
+								class="categories-list__sublist categories-list__sublist--collapsed"
+							>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Досудебное взыскание задолженности
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Судебное взыскание долгов </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"
+										>Взыскание долга в арбитражном суде
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Консультации по взысканию задолженности
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Представительство компаний в судах общей юрисдикции
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Защита бизнеса в трудовых спорах
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Расторжение договоров в судебном порядке
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="categories-list__item categories-list__item--tree">
+							<a href="" class="categories-list__link"> Арбитражные споры </a>
+							<ul
+								class="categories-list__sublist categories-list__sublist--collapsed"
+							>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Ведение арбитражных дел </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Представительство в арбитражном суде
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">Споры по договору аренды </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Споры по договору подряда </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Споры по договору поставки
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="block-tabs__col">
+					<ul class="categories-list categories-list--practice">
+						<li class="categories-list__item categories-list__item--tree">
+							<a href="" class="categories-list__link">
+								Интеллектуальная собственность
+							</a>
+							<ul
+								class="categories-list__sublist categories-list__sublist--collapsed"
+							>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Проверка товарных знаков </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Регистрация товарных знаков
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"
+										>Аннулирование товарных знаков
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Регистрация договоров в Роспатенте
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Регистрация ПО в Роспатент
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Регистрация ПО в реестре Минцифры
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Аккредитация IT компаний </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Сопровождение сделок с IP </a>
+								</li>
+							</ul>
+						</li>
+						<li class="categories-list__item categories-list__item--tree">
+							<a href="" class="categories-list__link"> Международные проекты </a>
+							<ul
+								class="categories-list__sublist categories-list__sublist--collapsed"
+							>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Создание компаний за рубежом
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Релокация бизнеса </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"
+										>Юридическое сопровождение бизнеса за рубежом
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Платежное агентирование </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class=" block-tabs__btns">
+					<button class="btn block-tabs__btn block-tabs__btn--prev">
+						<svg
+							width="26"
+							height="12"
+							viewBox="0 0 26 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M5.98436 11.3675L0.426336 5.80478L5.98436 0.256104L6.65048 0.922225L2.21668 5.33732H25.5566V6.27223H2.21668L6.65048 10.7014L5.98436 11.3675Z"
+								fill="white"
+							/>
+						</svg>
+					</button>
+					<button class="btn block-tabs__btn block-tabs__btn--next">
+						<svg
+							width="26"
+							height="12"
+							viewBox="0 0 26 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<mask
+								id="mask0_223_453"
+								style="mask-type: luminance"
+								maskUnits="userSpaceOnUse"
+								x="0"
+								y="0"
+								width="26"
+								height="12"
+							>
+								<path
+									d="M0.415527 0.256104H25.6019V11.3675H0.415527V0.256104Z"
+									fill="white"
+								/>
+							</mask>
+							<g mask="url(#mask0_223_453)">
+								<path
+									d="M20.0156 11.3675L25.5737 5.80478L20.0156 0.256104L19.3495 0.922225L23.7833 5.33732H0.443359V6.27223H23.7833L19.3495 10.7014L20.0156 11.3675Z"
+									fill="white"
+								/>
+							</g>
+						</svg>
+					</button>
+				</div>
 			</div>
 			<div class="block-tabs__tab-content">
-				<ul class="categories-list categories-list--practice">
-					<li class="categories-list__item categories-list__item--tree">
-						<a href="" class="categories-list__link">Арбитражные споры</a>
-						<ul class="categories-list__sublist categories-list__sublist--collapsed">
-							<li class="categories-list__item">
-								<a class="categories-list__link">Ведение арбитражных дел</a>
-							</li>
-							<li class="categories-list__item">
-								<a class="categories-list__link">
-									Представительство в арбитражном суде
-								</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
+				<div class="block-tabs__col">
+					<ul class="categories-list categories-list--practice">
+						<li class="categories-list__item categories-list__item--tree">
+							<a href="" class="categories-list__link">Арбитражные споры</a>
+							<ul
+								class="categories-list__sublist categories-list__sublist--collapsed"
+							>
+								<li class="categories-list__item">
+									<a class="categories-list__link">Ведение арбитражных дел</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">
+										Представительство в арбитражном суде
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class=" block-tabs__btns">
+					<button class="btn block-tabs__btn block-tabs__btn--prev">
+						<svg
+							width="26"
+							height="12"
+							viewBox="0 0 26 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M5.98436 11.3675L0.426336 5.80478L5.98436 0.256104L6.65048 0.922225L2.21668 5.33732H25.5566V6.27223H2.21668L6.65048 10.7014L5.98436 11.3675Z"
+								fill="white"
+							/>
+						</svg>
+					</button>
+					<button class="btn block-tabs__btn block-tabs__btn--next">
+						<svg
+							width="26"
+							height="12"
+							viewBox="0 0 26 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<mask
+								id="mask0_223_453"
+								style="mask-type: luminance"
+								maskUnits="userSpaceOnUse"
+								x="0"
+								y="0"
+								width="26"
+								height="12"
+							>
+								<path
+									d="M0.415527 0.256104H25.6019V11.3675H0.415527V0.256104Z"
+									fill="white"
+								/>
+							</mask>
+							<g mask="url(#mask0_223_453)">
+								<path
+									d="M20.0156 11.3675L25.5737 5.80478L20.0156 0.256104L19.3495 0.922225L23.7833 5.33732H0.443359V6.27223H23.7833L19.3495 10.7014L20.0156 11.3675Z"
+									fill="white"
+								/>
+							</g>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</div>
 
@@ -631,6 +773,8 @@
 					</div>
 					<div class="projects__grid-project projects__grid-row">
 						<div class="projects__grid-project-name">
+							<h3 class="projects__grid-project-title">Проект</h3>
+
 							<h4>
 								Взыскание задолженностипо договору на разработку программного
 								обеспечения
@@ -638,6 +782,8 @@
 							<a href="#" class="projects__grid-hashtag hashtag">Арбитражные споры</a>
 						</div>
 						<div class="projects__grid-project-text">
+							<h3 class="projects__grid-project-title">Основные задачи клиента</h3>
+
 							<ul>
 								<li>Взыскать дебиторскую задолженностьс заказчика</li>
 								<li>Взыскать все судебные расходы</li>
@@ -645,6 +791,8 @@
 							</ul>
 						</div>
 						<div class="projects__grid-project-text">
+							<h3 class="projects__grid-project-title">Выгоды для клиента</h3>
+
 							<ul>
 								<li>
 									По решению суда в пользу клиента была взыскана в полном объеме
@@ -656,10 +804,224 @@
 								</li>
 							</ul>
 						</div>
+						<div class="projects__grid-project-footer">
+							<a href="#" class="projects__grid-project-link">Подробнее о проекте</a>
+						</div>
+					</div>
+					<div class="projects__grid-project projects__grid-row">
+						<div class="projects__grid-project-name">
+							<h3 class="projects__grid-project-title">Проект</h3>
+
+							<h4>
+								Взыскание задолженностипо договору на разработку программного
+								обеспечения
+							</h4>
+							<a href="#" class="projects__grid-hashtag hashtag">Арбитражные споры</a>
+						</div>
+						<div class="projects__grid-project-text">
+							<h3 class="projects__grid-project-title">Основные задачи клиента</h3>
+
+							<ul>
+								<li>Взыскать дебиторскую задолженностьс заказчика</li>
+								<li>Взыскать все судебные расходы</li>
+								<li>Защитить деловую репутацию</li>
+							</ul>
+						</div>
+						<div class="projects__grid-project-text">
+							<h3 class="projects__grid-project-title">Выгоды для клиента</h3>
+
+							<ul>
+								<li>
+									По решению суда в пользу клиента была взыскана в полном объеме
+									задолженностьна сумму более 1,2 млн рублей
+								</li>
+								<li>
+									Суд компенсировал клиенту 100% расходовна юристов на сумму более
+									100 000 рубле.
+								</li>
+							</ul>
+						</div>
+						<div class="projects__grid-project-footer">
+							<a href="#" class="projects__grid-project-link">Подробнее о проекте</a>
+						</div>
 					</div>
 				</div>
+				<div class="projects__btns">
+					<button class="btn projects__btn projects__btn--prev">
+						<svg
+							width="26"
+							height="12"
+							viewBox="0 0 26 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M5.98436 11.3675L0.426336 5.80478L5.98436 0.256104L6.65048 0.922225L2.21668 5.33732H25.5566V6.27223H2.21668L6.65048 10.7014L5.98436 11.3675Z"
+								fill="white"
+							/>
+						</svg>
+					</button>
+					<button class="btn projects__btn projects__btn--next">
+						<svg
+							width="26"
+							height="12"
+							viewBox="0 0 26 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<mask
+								id="mask0_223_453"
+								style="mask-type: luminance"
+								maskUnits="userSpaceOnUse"
+								x="0"
+								y="0"
+								width="26"
+								height="12"
+							>
+								<path
+									d="M0.415527 0.256104H25.6019V11.3675H0.415527V0.256104Z"
+									fill="white"
+								/>
+							</mask>
+							<g mask="url(#mask0_223_453)">
+								<path
+									d="M20.0156 11.3675L25.5737 5.80478L20.0156 0.256104L19.3495 0.922225L23.7833 5.33732H0.443359V6.27223H23.7833L19.3495 10.7014L20.0156 11.3675Z"
+									fill="white"
+								/>
+							</g>
+						</svg>
+					</button>
+				</div>
 			</div>
-			<div class="block-tabs__tab-content"></div>
+			<div class="block-tabs__tab-content">
+				<div class="projects__grid">
+					<div class="projects__grid-header projects__grid-row">
+						<h3 class="projects__grid-title">Проект</h3>
+						<h3 class="projects__grid-title">Основные задачи клиента</h3>
+						<h3 class="projects__grid-title">Выгоды для клиента</h3>
+					</div>
+					<div class="projects__grid-project projects__grid-row">
+						<div class="projects__grid-project-name">
+							<h3 class="projects__grid-project-title">Проект</h3>
+
+							<h4>
+								Взыскание задолженностипо договору на разработку программного
+								обеспечения
+							</h4>
+							<a href="#" class="projects__grid-hashtag hashtag">Арбитражные споры</a>
+						</div>
+						<div class="projects__grid-project-text">
+							<h3 class="projects__grid-project-title">Основные задачи клиента</h3>
+
+							<ul>
+								<li>Взыскать дебиторскую задолженностьс заказчика</li>
+								<li>Взыскать все судебные расходы</li>
+								<li>Защитить деловую репутацию</li>
+							</ul>
+						</div>
+						<div class="projects__grid-project-text">
+							<h3 class="projects__grid-project-title">Выгоды для клиента</h3>
+
+							<ul>
+								<li>
+									По решению суда в пользу клиента была взыскана в полном объеме
+									задолженностьна сумму более 1,2 млн рублей
+								</li>
+								<li>
+									Суд компенсировал клиенту 100% расходовна юристов на сумму более
+									100 000 рубле.
+								</li>
+							</ul>
+						</div>
+						<div class="projects__grid-project-footer">
+							<a href="#" class="projects__grid-project-link">Подробнее о проекте</a>
+						</div>
+					</div>
+					<div class="projects__grid-project projects__grid-row">
+						<div class="projects__grid-project-name">
+							<h3 class="projects__grid-project-title">Проект</h3>
+
+							<h4>
+								Взыскание задолженностипо договору на разработку программного
+								обеспечения
+							</h4>
+							<a href="#" class="projects__grid-hashtag hashtag">Арбитражные споры</a>
+						</div>
+						<div class="projects__grid-project-text">
+							<h3 class="projects__grid-project-title">Основные задачи клиента</h3>
+
+							<ul>
+								<li>Взыскать дебиторскую задолженностьс заказчика</li>
+								<li>Взыскать все судебные расходы</li>
+								<li>Защитить деловую репутацию</li>
+							</ul>
+						</div>
+						<div class="projects__grid-project-text">
+							<h3 class="projects__grid-project-title">Выгоды для клиента</h3>
+
+							<ul>
+								<li>
+									По решению суда в пользу клиента была взыскана в полном объеме
+									задолженностьна сумму более 1,2 млн рублей
+								</li>
+								<li>
+									Суд компенсировал клиенту 100% расходовна юристов на сумму более
+									100 000 рубле.
+								</li>
+							</ul>
+						</div>
+						<div class="projects__grid-project-footer">
+							<a href="#" class="projects__grid-project-link">Подробнее о проекте</a>
+						</div>
+					</div>
+				</div>
+				<div class="projects__btns">
+					<button class="btn projects__btn projects__btn--prev">
+						<svg
+							width="26"
+							height="12"
+							viewBox="0 0 26 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M5.98436 11.3675L0.426336 5.80478L5.98436 0.256104L6.65048 0.922225L2.21668 5.33732H25.5566V6.27223H2.21668L6.65048 10.7014L5.98436 11.3675Z"
+								fill="white"
+							/>
+						</svg>
+					</button>
+					<button class="btn projects__btn projects__btn--next">
+						<svg
+							width="26"
+							height="12"
+							viewBox="0 0 26 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<mask
+								id="mask0_223_453"
+								style="mask-type: luminance"
+								maskUnits="userSpaceOnUse"
+								x="0"
+								y="0"
+								width="26"
+								height="12"
+							>
+								<path
+									d="M0.415527 0.256104H25.6019V11.3675H0.415527V0.256104Z"
+									fill="white"
+								/>
+							</mask>
+							<g mask="url(#mask0_223_453)">
+								<path
+									d="M20.0156 11.3675L25.5737 5.80478L20.0156 0.256104L19.3495 0.922225L23.7833 5.33732H0.443359V6.27223H23.7833L19.3495 10.7014L20.0156 11.3675Z"
+									fill="white"
+								/>
+							</g>
+						</svg>
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -682,7 +1044,7 @@
 				</div>
 				<button class="btn block-about__btn">Скачать презентацию</button>
 			</div>
-			<div class="blokc-about__img-wrapper">
+			<div class="block-about__img-wrapper">
 				<img src="img/about/about.webp" alt="women" class="block-about__img" />
 			</div>
 		</div>
@@ -1027,41 +1389,37 @@
 			<div class="footer__block">
 				<div class="footer__menu footer__menu--uslugi">
 					<div class="footer__block-title">Услуги</div>
-					<div class="footer__menu">
-						<ul class="categories-list ">
-							<li class="categories-list__item categories-list__item--tree">
-								<a href="" class="categories-list__link"> Юридическое сопровождение </a>
-								<ul class="categories-list__sublist categories-list__sublist--collapsed">
-									<li class="categories-list__item">
-										<a class="categories-list__link"
-											>Юридические консультации для бизнеса
-										</a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Разработка договоров </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link">Налоговое консультирование </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Корпоративное право </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Трудовое право </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Сопровождение ВЭД </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Юридический аутсорсинг </a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-
+					<ul class="categories-list ">
+						<li class="categories-list__item categories-list__item--tree">
+							<a href="" class="categories-list__link"> Юридическое сопровождение </a>
+							<ul class="categories-list__sublist categories-list__sublist--collapsed">
+								<li class="categories-list__item">
+									<a class="categories-list__link"
+										>Юридические консультации для бизнеса
+									</a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Разработка договоров </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link">Налоговое консультирование </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Корпоративное право </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Трудовое право </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Сопровождение ВЭД </a>
+								</li>
+								<li class="categories-list__item">
+									<a class="categories-list__link"> Юридический аутсорсинг </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-
 			</div>
 			<div class="footer__block">
 				<div class="footer__menu footer__menu--uslugi">
@@ -1115,6 +1473,139 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="footer__inner footer__inner--mobile block-tabs">
+			<div class="footer__logo">
+				<div class="logo-wrapper">
+	<svg class="logo">
+		<use xlink:href="img/sprites/sprite.svg#logo"></use>
+	</svg>
+</div>
+
+				<span>
+					Юридическое сопровождение <br />
+					бизнеса и ведение споров
+				</span>
+			</div>
+			<div class="footer__tabs block-tabs__tabs">
+				<div class="footer__tab block-tabs__tab block-tabs__tab--active">О компанни</div>
+				<div class="footer__tab block-tabs__tab">Услуги</div>
+
+			</div>
+			<div class=" footer__tabs-content block-tabs__content">
+				<div class="footer__block block-tabs__tab-content block-tabs__tab-content--active ">
+					<div class="footer__menu footer__menu--about">
+						<ul class="categories-list ">
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Проекты</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Миссия</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Комманда</a>
+							</li>
+						</ul>
+						<ul class="categories-list ">
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Карьера</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Медиа-Центр</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Карта сайта</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__block block-tabs__tab-content">
+					<div class="footer__menu footer__menu--uslugi">
+						<ul class="categories-list ">
+							<li class="categories-list__item categories-list__item--tree">
+								<a href="" class="categories-list__link"> Юридическое сопровождение </a>
+								<ul class="categories-list__sublist categories-list__sublist--collapsed">
+									<li class="categories-list__item">
+										<a class="categories-list__link"
+											>Юридические консультации для бизнеса
+										</a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Разработка договоров </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link">Налоговое консультирование </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Корпоративное право </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Трудовое право </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Сопровождение ВЭД </a>
+									</li>
+									<li class="categories-list__item">
+										<a class="categories-list__link"> Юридический аутсорсинг </a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="categories-list ">
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Судебные споры и взыскание долгов</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Арбитражные споры</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Интеллектуальная собственность</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Создание бизнеса в России</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Недвижимость и строительство</a>
+							</li>
+							<li class="categories-list__item categories-list__item">
+								<a href="" class="categories-list__link"> Международные проекты </a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="footer__contacts">
+				<div class="footer__contact footer__contact--adress">
+					<img class="footer__icon" alt="address" src="img/icons/metka.webp" />
+					<span>Москва, Большой Знаменский переулок, д. 2с4.</span>
+				</div>
+				<div class="footer__contact footer__contact--email">
+					<img class="footer__icon" alt="email" src="img/icons/email.webp" />
+					<a href="mailto:info@solid-case.com">info@solid-case.com</a>
+				</div>
+				<div class="footer__contacts-inner">
+					<div class="footer__contact footer__contact--phone">
+						<img class="footer__icon" alt="phone" src="img/icons/phone.webp" />
+						<a href="tel:+7 495 155 78 75">+7 495 155 78 75</a>
+					</div>
+					<div class="footer__icons">
+						<div class="footer__icon">
+							<a href="">
+								<img src="img/icons/telegram.webp" alt="telegram" />
+							</a>
+						</div>
+						<div class="footer__icon">
+							<a href="">
+								<img src="img/icons/whatsapp.webp" alt="whatsapp" />
+							</a>
+						</div>
+					</div>
+					<button class="btn footer__btn">Заказать звонок</button>
+				</div>
+
+			</div>
+		</div>
+
 		<div class="footer__copyright">
 			<span>
 				© 2024 Все права защищены. Информация сайта защищена законом.
