@@ -63,15 +63,17 @@
 			sizes="1024x1024"
 			href="img/favicons/apple-touch-icon-1024x1024.png"
 		/>
-		<link rel="stylesheet" href="styles/main.min.css" />
+		<link rel="stylesheet" href="styles/main.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container header__container">
 				<div class="logo-wrapper">
-	<svg class="logo">
-		<use xlink:href="img/sprites/sprite.svg#logo"></use>
-	</svg>
+	<a href="index.html">
+		<svg class="logo">
+			<use xlink:href="img/sprites/sprite.svg#logo"></use>
+		</svg>
+	</a>
 </div>
 
 				<div class="header__inner">
@@ -91,16 +93,14 @@
 						<div class="header__phone">
 							<a href="tel:+7 495 155 78 75">+7 495 155 78 75</a>
 						</div>
-						<button class="btn header__btn header__btn--mobile">
-							<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M17.9999 14.9731H0.111694V15.9999H17.9999V14.9731Z" fill="white" />
-								<path d="M17.9999 0H0.111694V1.02675H17.9999V0Z" fill="white" />
-								<path d="M18.0001 5.02661H9.72681V6.05336H18.0001V5.02661Z" fill="white" />
-								<path d="M18.0001 9.94653H9.72681V10.9733H18.0001V9.94653Z" fill="white" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.43975 3.93579L0 7.9908L6.43975 12.1498V3.93579Z" fill="white" />
-							  </svg>
-						</button>
-						<button class="btn header__btn">Заказать звонок</button>
+						<div class="header__btns">
+							<button class="btn header__btn header__btn--mobile burger-open">
+								<svg>
+									<use xlink:href="img/sprites/sprite.svg#burger-open"></use>
+								</svg>
+							</button>
+							<button class="btn header__btn">Заказать звонок</button>
+						</div>
 					</div>
 					<nav class="header__menu menu">
 						<ul class="menu__list">
@@ -131,7 +131,9 @@
 												class="categories-list__sublist categories-list__sublist--collapsed"
 											>
 												<li class="categories-list__item">
-													<a class="categories-list__link" href="./usluga.html"
+													<a
+														class="categories-list__link"
+														href="./usluga.html"
 														>Ведение арбитражных дел</a
 													>
 												</li>
@@ -264,11 +266,15 @@
 									</ul>
 								</div>
 							</li>
-							<li class="menu__item"><a href="./projects.html" class="menu__link">Проекты</a></li>
+							<li class="menu__item">
+								<a href="./projects.html" class="menu__link">Проекты</a>
+							</li>
 							<li class="menu__item">
 								<a href="./media.html" class="menu__link">Медиа-Центр</a>
 							</li>
-							<li class="menu__item"><a href="./contacts.html" class="menu__link">Контакты</a></li>
+							<li class="menu__item">
+								<a href="./contacts.html" class="menu__link">Контакты</a>
+							</li>
 						</ul>
 						<div class="lang-switch">
 							<div class="lang-switch__icon">
@@ -281,16 +287,524 @@
 							</div>
 						</div>
 					</nav>
+					<nav class="header__menu--mobile menu-mobile">
+						<div class="menu-mobile__container">
+							<div class="tabs">
+	     
+	<div class="tabs__header">
+		<div class="tabs__wrapper">
+			<div class="tabs__tab">Практики</div>
+			<div class="tabs__tab">Отрасли</div>
+		</div>
+	</div>
+	<div class="tabs__content">
+		<div class="tabs__tab-content">
+			<div class="tabs__col">
+				<ul class="categories-list categories-list--practice">
+					<li class="categories-list__item categories-list__item--tree">
+						<a href="" class="categories-list__link"> Юридическое сопровождение </a>
+						<ul class="categories-list__sublist categories-list__sublist--collapsed">
+							<li class="categories-list__item">
+								<a class="categories-list__link"
+									>Юридические консультации для бизнеса
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Разработка договоров </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">Налоговое консультирование </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Корпоративное право </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Трудовое право </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Сопровождение ВЭД </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Юридический аутсорсинг </a>
+							</li>
+						</ul>
+					</li>
+					<li class="categories-list__item categories-list__item--tree">
+						<a href="" class="categories-list__link"> Создание бизнеса в России </a>
+						<ul class="categories-list__sublist categories-list__sublist--collapsed">
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Разработка структуры владения бизнеса
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Налоговое планирование </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"
+									>Составление корпоративных документов
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Договоры опциона, займа </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Правовой аудит бизнеса перед покупкой
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tabs__col">
+				<ul class="categories-list categories-list--practice">
+					<li class="categories-list__item categories-list__item--tree">
+						<a href="" class="categories-list__link">
+							Судебные споры и взыскание долгов
+						</a>
+						<ul class="categories-list__sublist categories-list__sublist--collapsed">
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Досудебное взыскание задолженности
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Судебное взыскание долгов </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"
+									>Взыскание долга в арбитражном суде
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Консультации по взысканию задолженности
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Представительство компаний в судах общей юрисдикции
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Защита бизнеса в трудовых спорах
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Расторжение договоров в судебном порядке
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="categories-list__item categories-list__item--tree">
+						<a href="" class="categories-list__link"> Арбитражные споры </a>
+						<ul class="categories-list__sublist categories-list__sublist--collapsed">
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Ведение арбитражных дел </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Представительство в арбитражном суде
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">Споры по договору аренды </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Споры по договору подряда </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Споры по договору поставки </a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tabs__col">
+				<ul class="categories-list categories-list--practice">
+					<li class="categories-list__item categories-list__item--tree">
+						<a href="" class="categories-list__link">
+							Интеллектуальная собственность
+						</a>
+						<ul class="categories-list__sublist categories-list__sublist--collapsed">
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Проверка товарных знаков </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Регистрация товарных знаков </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">Аннулирование товарных знаков </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Регистрация договоров в Роспатенте
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Регистрация ПО в Роспатент </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Регистрация ПО в реестре Минцифры
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Аккредитация IT компаний </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Сопровождение сделок с IP </a>
+							</li>
+						</ul>
+					</li>
+					<li class="categories-list__item categories-list__item--tree">
+						<a href="" class="categories-list__link"> Международные проекты </a>
+						<ul class="categories-list__sublist categories-list__sublist--collapsed">
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Создание компаний за рубежом </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Релокация бизнеса </a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"
+									>Юридическое сопровождение бизнеса за рубежом
+								</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Платежное агентирование </a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tabs__btns">
+				<button class="btn tabs__btn tabs__btn--prev">
+					<svg
+						width="26"
+						height="12"
+						viewBox="0 0 26 12"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M5.98436 11.3675L0.426336 5.80478L5.98436 0.256104L6.65048 0.922225L2.21668 5.33732H25.5566V6.27223H2.21668L6.65048 10.7014L5.98436 11.3675Z"
+							fill="white"
+						/>
+					</svg>
+				</button>
+				<button class="btn tabs__btn tabs__btn--next">
+					<svg
+						width="26"
+						height="12"
+						viewBox="0 0 26 12"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<mask
+							id="mask0_223_453"
+							style="mask-type: luminance"
+							maskUnits="userSpaceOnUse"
+							x="0"
+							y="0"
+							width="26"
+							height="12"
+						>
+							<path
+								d="M0.415527 0.256104H25.6019V11.3675H0.415527V0.256104Z"
+								fill="white"
+							/>
+						</mask>
+						<g mask="url(#mask0_223_453)">
+							<path
+								d="M20.0156 11.3675L25.5737 5.80478L20.0156 0.256104L19.3495 0.922225L23.7833 5.33732H0.443359V6.27223H23.7833L19.3495 10.7014L20.0156 11.3675Z"
+								fill="white"
+							/>
+						</g>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="tabs__tab-content">
+			<div class="tabs__col">
+				<ul class="categories-list categories-list--practice">
+					<li class="categories-list__item categories-list__item--tree">
+						<a href="" class="categories-list__link">Арбитражные споры</a>
+						<ul class="categories-list__sublist categories-list__sublist--collapsed">
+							<li class="categories-list__item">
+								<a class="categories-list__link">Ведение арбитражных дел</a>
+							</li>
+							<li class="categories-list__item">
+								<a class="categories-list__link">
+									Представительство в арбитражном суде
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tabs__btns">
+				<button class="btn tabs__btn tabs__btn--prev">
+					<svg
+						width="26"
+						height="12"
+						viewBox="0 0 26 12"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M5.98436 11.3675L0.426336 5.80478L5.98436 0.256104L6.65048 0.922225L2.21668 5.33732H25.5566V6.27223H2.21668L6.65048 10.7014L5.98436 11.3675Z"
+							fill="white"
+						/>
+					</svg>
+				</button>
+				<button class="btn tabs__btn tabs__btn--next">
+					<svg
+						width="26"
+						height="12"
+						viewBox="0 0 26 12"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<mask
+							id="mask0_223_453"
+							style="mask-type: luminance"
+							maskUnits="userSpaceOnUse"
+							x="0"
+							y="0"
+							width="26"
+							height="12"
+						>
+							<path
+								d="M0.415527 0.256104H25.6019V11.3675H0.415527V0.256104Z"
+								fill="white"
+							/>
+						</mask>
+						<g mask="url(#mask0_223_453)">
+							<path
+								d="M20.0156 11.3675L25.5737 5.80478L20.0156 0.256104L19.3495 0.922225L23.7833 5.33732H0.443359V6.27223H23.7833L19.3495 10.7014L20.0156 11.3675Z"
+								fill="white"
+							/>
+						</g>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="tabs__footer">
+		<div class="btn tabs__footer-btn">Заказать экспертизу</div>
+	</div>
+	 
+</div>
+
+							<div class="menu-mobile__lists">
+								<ul class="menu-mobile__list">
+									<li class="menu-mobile__item">
+										<a href="" class="menu-mobile__link">Проекты</a>
+									</li>
+									<li class="menu-mobile__item">
+										<a href="" class="menu-mobile__link">О нас</a>
+									</li>
+									<li class="menu-mobile__item">
+										<a href="" class="menu-mobile__link">Миссия</a>
+									</li>
+								</ul>
+								<ul class="menu-mobile__list">
+									<li class="menu-mobile__item">
+										<a href="" class="menu-mobile__link">Команда</a>
+									</li>
+									<li class="menu-mobile__item">
+										<a href="" class="menu-mobile__link">Карьера</a>
+									</li>
+									<li class="menu-mobile__item">
+										<a href="" class="menu-mobile__link">Контакты</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</header>
+		<div class="breadcrumbs">
+	<div class="container">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">Главная</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<span class="breadcrumbs__link">Каталог</span>
+			</li>
+		</ul>
+	</div>
+</div>
+
 	</body>
 </html>
 
 <main class="post post--project">
 	<div class="container post__container">
-		
-		
+		<div class="post-inner container-w70">
+	<h1 class="post-inner__title">Арбитражные споры</h1>
+	<div class="post-inner__content">
+		Арбитражные споры между организациями и коммерческими предприятиями в России рассматриваются
+		в арбитражах. В зависимости от суммы иска и предмета спора возможны различные процедуры
+		рассмотрения дел в арбитраже: приказное производство, упрощенный порядок, общее исковое
+		производство, разбирательства с участием иностранных лиц и другие. Исход рассмотрения дела
+		зависит от грамотно выстроенной правовой позиции, наличия необходимых документов,
+		обосновывающих требования, а также от опыта и квалификации юриста, представляющего Ваши
+		интересы. В рамках практики команда Solid Case оказывает целый спектр услуг по представлению
+		интересов в судебных спорах: Консультация юриста по арбитражу; Анализ документов и
+		предварительная оценка судебных перспектив по возникшему спору; Подготовка юридических
+		заключений; Письменные и устные консультации, участие в переговорах совместно с клиентом;
+		Проверка должника на платежеспособность и риски банкротства; Разработка правовой стратегии
+		защиты в деле; Представительство в арбитраже на всех уровнях: первая инстанция, апелляция,
+		кассация, Верховный суд РФ; Помощь юриста по арбитражным спорам; Решение коммерческих споров
+		в арбитраже; Взыскание долга; Помощь адвоката при исполнении решения суда, по получению
+		исполнительных листов, взаимодействие с банками и судебными приставами; Обжалование решений,
+		подготовка апелляционных жалоб и кассационных жалоб. Solid Case оказывает услуги компаниям и
+		организациям в Москве по следующим вопросам: Досудебное урегулирование споров, помощь в
+		составлении и утверждении мировых соглашений; Составление и подача искового заявления в
+		арбитраж; Помощь адвоката по арбитражным спорам; Отслеживание статуса и мониторинг
+		рассмотрения судебных дел; Взыскание долгов через арбитраж по договору поставки,
+		купли-продажи, договору подряда, аренды и по иным документам; Признание сделок и договоров
+		недействительными через арбитражный суд; Оспаривание ненормативных правовых актов; Полное
+		сопровождение арбитражных юридических споров; Взыскание неустойки в арбитраже; Составление и
+		подача апелляционной жалобы, кассационной жалобы, представительство адвоката в ВС РФ;
+		Административные дела; Споры в сфере законодательства о рекламе; Представительство интересов
+		компании в деле о банкротстве; Юридическое сопровождение арбитражных споров под ключ.
+		Успешный опыт нашей команды по сопровождению различных судебных процессов позволяет нам
+		оперативно погрузиться в задачу клиента и разработать эффективную стратегию по защите его
+		интересов. Наше портфолио включает в себя успешно выигранные кейсы различной степени
+		сложности: от стандартных дел по взысканию задолженности до неоднозначных банковских споров
+		и признания сделок недействительными.
+	</div>
+</div>
+
+		<aside class="sidebar container-w30">
+	<div class="widget widget-authors">
+		<h4 class="widget__title">Команда проекта</h4>
+		<ul class="widget__inner authors">
+			<li class="authors__item">
+				<div class="authors__img-wrapper">
+					<img class="authors__img" src="https://via.placeholder.com/100" alt="" />
+				</div>
+				<div class="authors__content">
+					<h5 class="authors__name">Юлия Ткачева</h5>
+					<div class="authors__position">Управляющий партнер</div>
+					<button class="authors__btn">
+						<img src="img/sprites/send.svg" alt="" />
+						<span> Отправить сообщение </span>
+					</button>
+				</div>
+			</li>
+			<li class="authors__item">
+				<div class="authors__img-wrapper">
+					<img class="authors__img" src="https://via.placeholder.com/100" alt="" />
+				</div>
+				<div class="authors__content">
+					<h5 class="authors__name">Юлия Ткачева</h5>
+					<div class="authors__position">Управляющий партнер</div>
+					<button class="authors__btn">
+						<img src="img/sprites/send.svg" alt="" />
+						<span> Отправить сообщение </span>
+					</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="widget widget-more">
+		<h4 class="widget__title">Похожие проекты</h4>
+		<ul class="widget__inner">
+			<li>
+				<a href=""
+					>Как составить договор на разработку сайта и защитить интересы IT компании</a
+				>
+			</li>
+			<li>
+				<a href=""
+					>5 советов от юристов: как правильно составить досудебную претензию о взыскании
+					денег</a
+				>
+			</li>
+		</ul>
+	</div>
+	<div class="widget widget-categories">
+		<h4 class="widget__title">Практики и услуги</h4>
+		<ul class="categories-list categories-list--widget">
+			<li class="categories-list__item categories-list__item--tree">
+				<details>
+					<summary>
+						<span class="categories-list__link"> Юридическое сопровождение </span>
+					</summary>
+					<ul class="categories-list__sublist categories-list__sublist--collapsed">
+						<li class="categories-list__item">
+							<a class="categories-list__link"
+								>Юридические консультации для бизнеса
+							</a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link"> Разработка договоров </a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link">Налоговое консультирование </a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link"> Корпоративное право </a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link"> Трудовое право </a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link"> Сопровождение ВЭД </a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link"> Юридический аутсорсинг </a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li class="categories-list__item categories-list__item--tree">
+				<details>
+					<summary>
+						<span href="" class="categories-list__link">
+							Создание бизнеса в России
+						</span>
+					</summary>
+
+					<ul class="categories-list__sublist categories-list__sublist--collapsed">
+						<li class="categories-list__item">
+							<a class="categories-list__link">
+								Разработка структуры владения бизнеса
+							</a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link"> Налоговое планирование </a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link"
+								>Составление корпоративных документов
+							</a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link"> Договоры опциона, займа </a>
+						</li>
+						<li class="categories-list__item">
+							<a class="categories-list__link">
+								Правовой аудит бизнеса перед покупкой
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+		</ul>
+	</div>
+</aside>
+
 	</div>
 </main>
 <footer class="footer">
@@ -299,9 +813,11 @@
 			<div class="footer__block">
 				<div class="footer__logo">
 					<div class="logo-wrapper">
-	<svg class="logo">
-		<use xlink:href="img/sprites/sprite.svg#logo"></use>
-	</svg>
+	<a href="index.html">
+		<svg class="logo">
+			<use xlink:href="img/sprites/sprite.svg#logo"></use>
+		</svg>
+	</a>
 </div>
 
 					<span>
@@ -420,12 +936,14 @@
 			</div>
 		</div>
 
-		<div class="footer__inner footer__inner--mobile block-tabs">
+		<div class="footer__inner footer__inner--mobile">
 			<div class="footer__logo">
 				<div class="logo-wrapper">
-	<svg class="logo">
-		<use xlink:href="img/sprites/sprite.svg#logo"></use>
-	</svg>
+	<a href="index.html">
+		<svg class="logo">
+			<use xlink:href="img/sprites/sprite.svg#logo"></use>
+		</svg>
+	</a>
 </div>
 
 				<span>
@@ -433,93 +951,100 @@
 					бизнеса и ведение споров
 				</span>
 			</div>
-			<div class="footer__tabs block-tabs__tabs">
-				<div class="footer__tab block-tabs__tab block-tabs__tab--active">О компанни</div>
-				<div class="footer__tab block-tabs__tab">Услуги</div>
 
+			<div class="tabs">
+	    
+	<div class="tabs__wrapper">
+		<div class="footer__tab tabs__tab tabs__tab--active">О компанни</div>
+		<div class="footer__tab tabs__tab">Услуги</div>
+	</div>
+	<div class="tabs__content">
+		<div class="footer__block tabs__tab-content tabs__tab-content--active">
+			<div class="footer__menu footer__menu--about">
+				<ul class="categories-list">
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Проекты</a>
+					</li>
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Миссия</a>
+					</li>
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Комманда</a>
+					</li>
+				</ul>
+				<ul class="categories-list">
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Карьера</a>
+					</li>
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Медиа-Центр</a>
+					</li>
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Карта сайта</a>
+					</li>
+				</ul>
 			</div>
-			<div class=" footer__tabs-content block-tabs__content">
-				<div class="footer__block block-tabs__tab-content block-tabs__tab-content--active ">
-					<div class="footer__menu footer__menu--about">
-						<ul class="categories-list ">
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Проекты</a>
+		</div>
+		<div class="footer__block tabs__tab-content">
+			<div class="footer__menu footer__menu--uslugi">
+				<ul class="categories-list">
+					<li class="categories-list__item categories-list__item--tree">
+						<a href="" class="categories-list__link"> Юридическое сопровождение </a>
+						<ul class="categories-list__sublist categories-list__sublist--collapsed">
+							<li class="categories-list__item">
+								<a class="categories-list__link"
+									>Юридические консультации для бизнеса
+								</a>
 							</li>
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Миссия</a>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Разработка договоров </a>
 							</li>
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Комманда</a>
+							<li class="categories-list__item">
+								<a class="categories-list__link">Налоговое консультирование </a>
 							</li>
-						</ul>
-						<ul class="categories-list ">
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Карьера</a>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Корпоративное право </a>
 							</li>
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Медиа-Центр</a>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Трудовое право </a>
 							</li>
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Карта сайта</a>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Сопровождение ВЭД </a>
 							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer__block block-tabs__tab-content">
-					<div class="footer__menu footer__menu--uslugi">
-						<ul class="categories-list ">
-							<li class="categories-list__item categories-list__item--tree">
-								<a href="" class="categories-list__link"> Юридическое сопровождение </a>
-								<ul class="categories-list__sublist categories-list__sublist--collapsed">
-									<li class="categories-list__item">
-										<a class="categories-list__link"
-											>Юридические консультации для бизнеса
-										</a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Разработка договоров </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link">Налоговое консультирование </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Корпоративное право </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Трудовое право </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Сопровождение ВЭД </a>
-									</li>
-									<li class="categories-list__item">
-										<a class="categories-list__link"> Юридический аутсорсинг </a>
-									</li>
-								</ul>
+							<li class="categories-list__item">
+								<a class="categories-list__link"> Юридический аутсорсинг </a>
 							</li>
 						</ul>
-						<ul class="categories-list ">
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Судебные споры и взыскание долгов</a>
-							</li>
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Арбитражные споры</a>
-							</li>
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Интеллектуальная собственность</a>
-							</li>
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Создание бизнеса в России</a>
-							</li>
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Недвижимость и строительство</a>
-							</li>
-							<li class="categories-list__item categories-list__item">
-								<a href="" class="categories-list__link"> Международные проекты </a>
-							</li>
-						</ul>	
-					</div>
-				</div>
+					</li>
+				</ul>
+				<ul class="categories-list">
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link">
+							Судебные споры и взыскание долгов</a
+						>
+					</li>
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Арбитражные споры</a>
+					</li>
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Интеллектуальная собственность</a>
+					</li>
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Создание бизнеса в России</a>
+					</li>
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Недвижимость и строительство</a>
+					</li>
+					<li class="categories-list__item categories-list__item">
+						<a href="" class="categories-list__link"> Международные проекты </a>
+					</li>
+				</ul>
 			</div>
+		</div>
+	</div>
+	  
+</div>
+
 			<div class="footer__contacts">
 				<div class="footer__contact footer__contact--adress">
 					<img class="footer__icon" alt="address" src="img/icons/metka.webp" />
@@ -561,7 +1086,7 @@
 		</div>
 	</div>
 </footer>
-<script src="js/vendor.min.js"></script>
-<script src="js/main.min.js"></script>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
